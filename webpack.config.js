@@ -29,6 +29,7 @@ var webpackconfig = {
         }),
         new CopyWebpackPlugin([
             { from: 'front-end/app/assets/favicon.ico', to: './img/favicon.ico' },
+            { from: 'front-end/app/assets/kdev.png', to: './img/kdev.png' },
             { from: 'back-end/server.js', to: './server.js' }
         ])
     ],

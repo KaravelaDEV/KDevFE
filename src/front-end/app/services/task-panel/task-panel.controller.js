@@ -1,12 +1,19 @@
 'use strict';
 
-var taskPanelController = function(title, summary, content, exptitle, expsummary){
+var taskPanelController = function($mdDialog, taskDialog, task){
     var $ctrl = this;
-    $ctrl.title = title;
-    $ctrl.summary = summary;
-    $ctrl.content = content;
-    $ctrl.exptitle = exptitle;
-    $ctrl.expsummary = expsummary
+    $ctrl.task = task;
+
+    $ctrl.editTask = function(task, ev){
+        taskDialog.targetEvent = ev;
+        taskDialog.locals = {task: JSON.parse(JSON.stringify(task))};
+        $mdDialog.show(taskDialog).then(function(updatedTask){
+            console.log(updatedTask);
+            $ctrl.task = updatedTask;
+        }, function(){
+            console.log('canceled');
+        });
+    }
 };
 
 module.exports = taskPanelController;
