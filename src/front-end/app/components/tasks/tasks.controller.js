@@ -1,35 +1,40 @@
 'use strict';
 
-var tasksController = ['$mdExpansionPanelGroup', '$mdDialog', 'taskPanel', 'taskDialog',
-    function($mdExpansionPanelGroup, $mdDialog, taskPanel, taskDialog){
+var tasksController = ['$mdExpansionPanelGroup', '$mdDialog', 'taskPanel', 'taskDialog', 'taskRest',
+    function($mdExpansionPanelGroup, $mdDialog, taskPanel, taskDialog, taskRest){
 
     var self = this;
 
-    var groupInstance;
+    self.filter = {
+        query: '',
+        completed: null
+    };
+
+    self.groupInstance = null;
 
     $mdExpansionPanelGroup().waitFor('expansionPanelGroup').then(function (instance) {
-        groupInstance = instance;
+        self.groupInstance = instance;
 
         instance.register('templated', taskPanel);
 
-        groupInstance.add('templated', {task:{
-            title: 'Launch GCP Course A',
-            status: 'Pendente',
-            description: 'Launching of the courser Introduction to Google Cloud Plaftorm Development A',
-            date: '10/10/2017'
-        }});
-
+        var tasks = taskRest.list();
+        tasks.forEach(function(task){
+            self.groupInstance.add('templated', {task:task});
+        });
     });
 
     self.addTask = function(ev){
         taskDialog.targetEvent = ev;
-        taskDialog.locals = {task:{title:'', status:'',  description:'', date:''}};
+        taskDialog.locals = {task:{title:'', completed:false,  description:'', date:''}};
         $mdDialog.show(taskDialog).then(function(newTask){
-            newTask.status = 'Pendente';
-            groupInstance.add('templated', {task:newTask});
+            self.groupInstance.add('templated', {task:newTask});
+            taskRest.save(newTask);
         }, function(){
-            console.log('canceled')
         });
+    };
+
+    self.filterTasks = function(){
+        taskRest.filter(self.filter);
     };
 }];
 

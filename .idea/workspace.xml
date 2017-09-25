@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38e4036f-bc41-43d8-81d2-6be0a9c4c60f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/components/components.module.js" afterPath="$PROJECT_DIR$/src/front-end/app/components/components.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/app.module.js" afterPath="$PROJECT_DIR$/src/front-end/app/app.module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js" afterPath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.module.js" afterPath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html" afterPath="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.controller.js" afterPath="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html" afterPath="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.controller.js" afterPath="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.template.html" afterPath="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +21,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="tasks.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.template.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <element signature="n#md-button#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#md-toolbar#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-card-content#0;n#md-card#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#md-content#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#md-expansion-panel-group#0;n#div#1;n#md-content#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -40,7 +71,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.component.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/app.template.html" />
-        <option value="$PROJECT_DIR$/src/front-end/app/app.module.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/components/task-panel/task-panel.component.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/components/task-panel/task-panel.contreoller.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/components/task-panel/task-panel.module.js" />
@@ -52,16 +82,20 @@
         <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/task-panel/task-panel.factory.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/components/components.module.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task.-dialog.template.html" />
-        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.module.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html" />
-        <option value="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html" />
         <option value="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.factory.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html" />
         <option value="$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.controller.js" />
-        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.controller.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.module.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app/filters/task-status.filter.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/front-end/app/app.module.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html" />
+        <option value="$PROJECT_DIR$/src/front-end/app/services/task-rest/task-rest.factory.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app/filters/task-status/task-status.filter.js" />
         <option value="$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.template.html" />
+        <option value="$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js" />
       </list>
     </option>
   </component>
@@ -104,6 +138,53 @@
               <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KDevFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDevFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="task-rest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -119,6 +200,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\sandbox\KEstudos\KDevFE\src\front-end\app\filters\task-status" />
       <recent name="C:\sandbox\KEstudos\KDevFE\src\front-end\app\services" />
       <recent name="C:\sandbox\KEstudos\KDevFE\src\front-end\app\components\tasks\task-panel" />
       <recent name="C:\sandbox\KEstudos\KDevFE\src\front-end\app\components\tasks" />
@@ -251,10 +333,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24060151" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28181818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23863636" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23863636" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19011815" sideWeight="0.49545455" order="0" side_tool="false" content_ui="combo" x="67" y="107" width="385" height="632" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19011815" sideWeight="0.49545455" order="0" side_tool="false" content_ui="combo" x="67" y="107" width="385" height="632" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -338,30 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/app.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/components/components.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -380,18 +438,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#284#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding>
+            <element signature="n#md-dialog#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/components/components.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/app.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.module.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-603">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="73" lean-forward="false" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#750#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/filters/task-status/task-status.filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-rest/task-rest.factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="1" column="97" lean-forward="true" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="100" />
+        <state relative-caret-position="81">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
             <element signature="n#md-button#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
@@ -399,65 +551,7 @@
             <element signature="n#style#0;n#h3#0;n#div#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-card-content#0;n#md-card#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#md-content#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-dialog/task-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="n#md-expansion-panel-collapsed#0;n#md-expansion-panel#0;n#!!top" expanded="false" />
-            <element signature="n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="false" />
-            <element signature="n#md-expansion-panel-header#0;n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="false" />
-            <element signature="n#md-expansion-panel-content#0;n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="false" />
-            <element signature="n#md-expansion-panel-footer#0;n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#div#0;n#md-expansion-panel-footer#0;n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#1;n#div#0;n#md-expansion-panel-footer#0;n#md-expansion-panel-expanded#0;n#md-expansion-panel#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/services/task-panel/task-panel.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/front-end/app/components/tasks/tasks.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1108#0" expanded="false" />
-            <element signature="e#0#1108#0" expanded="false" />
+            <element signature="n#md-expansion-panel-group#0;n#div#1;n#md-content#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

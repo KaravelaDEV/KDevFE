@@ -16,18 +16,18 @@
         <md-card-content layout="row" layout-align="start center">
             <md-input-container flex>
                 <label>Pesquisa</label>
-                <input ng-model="task.title">
+                <input ng-model="$ctrl.filter.query">
             </md-input-container>
 
             <div layout="row" layout-align="space-between center">
-                <md-select ng-model="weapon" placeholder="Tipos de Tarefas" class="md-no-underline">
-                    <md-option value="concluida">Tarefas Concluídas</md-option>
-                    <md-option value="pendente">Tarefas Pendentes</md-option>
-                    <md-option value="todas">Todas as Tarefas</md-option>
+                <md-select ng-model="$ctrl.filter.completed" placeholder="Tipos de Tarefas" class="md-no-underline">
+                    <md-option value="true">Tarefas Concluídas</md-option>
+                    <md-option value="false">Tarefas Pendentes</md-option>
+                    <md-option value="null">Todas as Tarefas</md-option>
                 </md-select>
             </div>
 
-            <md-button class="md-icon-button md-primary" ng-click="$panel.remove();">
+            <md-button class="md-icon-button md-primary" ng-click="$ctrl.filterTasks();">
                 <ng-md-icon icon="search" style="fill:black; position: relative;" size="20"></ng-md-icon>
             </md-button>
         </md-card-content>

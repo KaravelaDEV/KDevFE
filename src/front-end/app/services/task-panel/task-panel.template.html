@@ -2,7 +2,7 @@
 
     <md-expansion-panel-collapsed>
         <div class="md-title">{{$ctrl.task.title}}</div>
-        <div class="md-summary">{{$ctrl.task.status}}</div>
+        <div class="md-summary">{{$ctrl.task.completed | taskStatus}}</div>
         <md-expansion-panel-icon></md-expansion-panel-icon>
     </md-expansion-panel-collapsed>
 
@@ -10,7 +10,7 @@
 
         <md-expansion-panel-header ng-click="$panel.collapse();">
             <div class="md-title">{{$ctrl.task.title}}</div>
-            <div class="md-summary">{{$ctrl.task.status}}</div>
+            <div class="md-summary">{{$ctrl.task.completed | taskStatus}}</div>
             <md-expansion-panel-icon></md-expansion-panel-icon>
         </md-expansion-panel-header>
 
@@ -22,11 +22,11 @@
 
             <h4>Data</h4>
             <p>
-                {{$ctrl.task.date}}
+                {{$ctrl.task.date | date:'dd/MM/yyyy'}}
             </p>
             <div layout="column" layout-align="start start" flex>
                 <md-input-container class="md-block">
-                    <md-checkbox ng-model="project.tos">
+                    <md-checkbox ng-model="$ctrl.task.status" ng-change="$ctrl.updateStatus();">
                         Concluído
                     </md-checkbox>
                 </md-input-container>
@@ -36,11 +36,11 @@
         <md-expansion-panel-footer>
             <div layout="row" layout-align="end center" flex>
 
-            <md-button class="md-icon-button md-primary" ng-click="$panel.remove();">
-                <ng-md-icon icon="delete" style="fill:red; position: relative;" size="20"></ng-md-icon>
+            <md-button class="md-icon-button md-primary" ng-click="$ctrl.removeTask($panel);">
+                <ng-md-icon icon="delete" style="fill:black; position: relative;" size="20"></ng-md-icon>
             </md-button>
 
-            <md-button class="md-icon-button md-primary" ng-click="$ctrl.editTask($ctrl.task, $event);">
+            <md-button class="md-icon-button md-primary" ng-click="$ctrl.editTask($event);">
                 <ng-md-icon icon="edit" style="fill:black; position: relative;" size="20"></ng-md-icon>
             </md-button>
             </div>
