@@ -1,60 +1,99 @@
 'use strict';
 
+require('fetch-polyfill');
+
 var taskRest = function() {
     self = this;
-    self.tasks = [{
-            title: 'Launch GCP Course A',
-            completed: true,
-            description: 'Launching of the courser Introduction to Google Cloud Plaftorm Development A',
-            date: new Date()
-        },{
-            title: 'Launch GCP Course A',
-            completed: false,
-            description: 'Launching of the courser Introduction to Google Cloud Plaftorm Development A',
-            date: new Date()
-        },{
-            title: 'Launch GCP Course A',
-            completed: true,
-            description: 'Launching of the courser Introduction to Google Cloud Plaftorm Development A',
-            date: new Date()
-        },{
-            title: 'Launch GCP Course A',
-            completed: false,
-            description: 'Launching of the courser Introduction to Google Cloud Plaftorm Development A',
-            date: new Date()
-        }
-    ];
 
     self.save = function(task){
-        self.tasks.push(task);
-        console.log('Saving:');
-        console.log(self.tasks);
+        var options = {
+            method: 'POST',
+            body: JSON.stringify(task)
+        };
+
+        var promise = fetch('http://localhost:3000/tasks', options).then(function(response){
+            return response.json();
+        });
+
+        return promise;
     };
 
     self.list = function(){
-        console.log('Listing:');
-        return self.tasks;
+        var options = {
+            method: 'GET'
+        };
+
+        var promise = fetch('http://localhost:3000/tasks', options).then(function(response){
+            return response.json();
+        });
+
+        return promise;
     };
 
     self.remove = function(task){
-        console.log('Removing:');
-        console.log(task);
+        var options = {
+            method: 'DELETE',
+            body: JSON.stringify(task)
+        };
+
+        var promise = fetch('http://localhost:3000/tasks' , options).then(function(response){
+            return response.json();
+        });
+
+        return promise;
     };
 
     self.update = function(task){
-        console.log('Updating:');
-        console.log(task);
+        var options = {
+            method: 'PUT',
+            body: JSON.stringify(task)
+        };
+
+        var promise = fetch('http://localhost:3000/tasks' , options).then(function(response){
+            return response.json();
+        });
+
+        return promise;
     };
 
     self.updateStatus = function(task){
-        console.log('Updating status:');
-        console.log(task);
+        return self.update(task);
     };
 
     self.filter = function(filter) {
-        console.log('Filtering tasks:');
-        console.log(filter);
+        self.tasks = [];
+
+        var tasksFiltered = [];
+
+        self.tasks.forEach(function(task){
+            if(filter.query.length === 0){
+                if(task.completed === filter.completed){
+                    tasksFiltered.push(task);
+                }
+            }
+        });
+
+        self.tasks.forEach(function(task){
+            if(filter.completed === null){
+                if((task.title.indexOf(filter.query) !== -1) || (task.description.indexOf(filter.query) !== -1)){
+                    tasksFiltered.push(task);
+                }
+            }
+        });
+
+        self.tasks.forEach(function(task){
+            if((filter.query.length !== 0) && filter.completed !== null){
+                if((task.completed === filter.completed) &&
+                   ((task.title.indexOf(filter.query) !== -1) ||
+                    (task.description.indexOf(filter.query) !== -1))){
+                    tasksFiltered.push(task);
+                }
+            }
+        });
+
+        return tasksFiltered;
     };
+
 };
 
 var taskRestFactory = [function() {
