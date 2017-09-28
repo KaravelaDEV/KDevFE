@@ -20,10 +20,10 @@
             </md-input-container>
 
             <div layout="row" layout-align="space-between center">
-                <md-select ng-model="$ctrl.filter.completed" placeholder="Tipos de Tarefas" class="md-no-underline">
-                    <md-option value="true">Tarefas Concluídas</md-option>
-                    <md-option value="false">Tarefas Pendentes</md-option>
-                    <md-option value="null">Todas as Tarefas</md-option>
+                <md-select ng-model="$ctrl.filter.status" placeholder="Tipos de Tarefas" class="md-no-underline">
+                    <md-option value="1">Tarefas Concluídas</md-option>
+                    <md-option value="0">Tarefas Pendentes</md-option>
+                    <md-option value="-1">Todas as Tarefas</md-option>
                 </md-select>
             </div>
 

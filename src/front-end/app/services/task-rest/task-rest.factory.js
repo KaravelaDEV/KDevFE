@@ -61,37 +61,17 @@ var taskRest = function() {
     };
 
     self.filter = function(filter) {
-        self.tasks = [];
+        var options = {
+            method: 'GET'
+        };
 
-        var tasksFiltered = [];
+        var filterString = "?query=" + filter.query + "&status=" + filter.status;
 
-        self.tasks.forEach(function(task){
-            if(filter.query.length === 0){
-                if(task.completed === filter.completed){
-                    tasksFiltered.push(task);
-                }
-            }
+        var promise = fetch('http://localhost:3000/tasks' + filterString, options).then(function(response){
+            return response.json();
         });
 
-        self.tasks.forEach(function(task){
-            if(filter.completed === null){
-                if((task.title.indexOf(filter.query) !== -1) || (task.description.indexOf(filter.query) !== -1)){
-                    tasksFiltered.push(task);
-                }
-            }
-        });
-
-        self.tasks.forEach(function(task){
-            if((filter.query.length !== 0) && filter.completed !== null){
-                if((task.completed === filter.completed) &&
-                   ((task.title.indexOf(filter.query) !== -1) ||
-                    (task.description.indexOf(filter.query) !== -1))){
-                    tasksFiltered.push(task);
-                }
-            }
-        });
-
-        return tasksFiltered;
+        return promise;
     };
 
 };

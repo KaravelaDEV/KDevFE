@@ -1,11 +1,14 @@
 'use strict';
 
-var taskStatus = function(completed) {
-    if(completed){
+var taskStatus = function(status) {
+    if(status === 1){
         return 'Concluído';
     }
 
-    return "Pendente";
+    if(status === 0){
+        return 'Pendente';
+    }
+    return "Indefinido";
 };
 
 var taskStatusFilter = [function() {
